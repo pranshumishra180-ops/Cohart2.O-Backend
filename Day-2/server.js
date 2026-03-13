@@ -8,8 +8,13 @@ app.get('/',(req,res)=>{
 
 app.get('/about',function(req,res){
     res.send('this is abouut page');
+     
 })
 
+app.get('/home',function(req,res){
+    res.send('this is home page');
+
+})
 
 
 app.listen(3000) // server start krna   

@@ -1,0 +1,28 @@
+const express = require('express');
+
+
+const app = express(); // server createe ho gya h
+
+app.use(express.json())
+
+
+const notes = []
+
+
+app.post("/notes",(req,res)=>{
+
+console.log(req.body)  
+
+notes.push(req.body)
+
+    res.send("notes created succesfully ")
+})
+
+app.get('/notes', (req,res) => {
+    res.send(notes)
+})
+
+app.listen(3000,()=>{
+    console.log(' server is running on port 3000 ');
+    
+}); // server start ho gya h    
