@@ -22,7 +22,7 @@ const notes=[
 ]
 
 app.get('/',(req,res)=>{
-    res.send("Hello pRANSHU kESE HO")
+    res.send("Hello Pranshu  Kese ho ")
 })
 
 
